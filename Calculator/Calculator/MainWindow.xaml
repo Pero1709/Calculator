@@ -1,0 +1,53 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Azure">
+    <Grid Height="434" VerticalAlignment="Bottom" RenderTransformOrigin="0.476,0.553">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+
+        </Grid.RowDefinitions>
+        
+            <TextBlock Grid.Column="4" Grid.Row="1"  FontSize="20" FontWeight="Bold" Grid.ColumnSpan="7" Name="tb" Text=""/>
+            <Button Width="70" Height="70"  Name="btn1" Grid.Column="1" Grid.Row="2" Content="1" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn2" Grid.Column="2" Grid.Row="2" Content="2" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn3" Grid.Column="3" Grid.Row="2" Content="3" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn4" Grid.Column="1" Grid.Row="3" Content="4" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn5" Grid.Column="2" Grid.Row="3" Content="5" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn6" Grid.Column="3" Grid.Row="3" Content="6" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn7" Grid.Column="1" Grid.Row="4" Content="7" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn8" Grid.Column="2" Grid.Row="4" Content="8" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn9" Grid.Column="3" Grid.Row="4" Content="9" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btn0" Grid.Column="2" Grid.Row="5" Content="0" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="230" Name="btnResult" Grid.Column="7" Grid.Row="2" Grid.RowSpan="3" Content="="  FontSize="30" FontWeight="Bold" Click="Result_click"/>
+            <Button Width="70" Height="70" Name="btnDelete" Grid.Column="7" Grid.Row="5" Content="C" FontSize="20" FontWeight="Bold" Click="Del_Click"/>
+            <Button Width="70" Height="70" Name="btnPlus" Grid.Column="6" Grid.Row="2" Content="+" FontSize="30" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btnMinus" Grid.Column="6" Grid.Row="3" Content="-" FontSize="30" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btnMult" Grid.Column="6" Grid.Row="4" Content="*" FontSize="30" FontWeight="Bold" Click="Button_Click_1"/>
+            <Button Width="70" Height="70" Name="btnDiv" Grid.Column="6" Grid.Row="5" Content="/" FontSize="30" FontWeight="Bold" Click="Button_Click_1"/>
+        
+        
+    </Grid>
+</Window>
